@@ -1,5 +1,11 @@
 package com.codinganiket.linkdinProject.postsService.dto;
 
-public class PostCreateRequestDto {
+import jakarta.persistence.Column;
+import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 
+import java.time.LocalDateTime;
+@Data
+public class PostCreateRequestDto {
+    private String content;
 }
